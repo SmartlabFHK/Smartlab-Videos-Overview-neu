@@ -55,8 +55,8 @@ idxtotoc,						% Index im Inhaltsverzeichnis
 %\bigskip}
 %\KOMAoptions{fontsize=13pt}
 \usepackage[utf8]{inputenc}
-%\usepackage[english]{babel}
-\usepackage[ngerman]{babel}
+\usepackage[english]{babel}
+%\usepackage[ngerman]{babel}
 \setcounter{secnumdepth}{3}
 %\showhyphens{approximate factorization hierarchy}
 \usepackage[T1]{fontenc}
@@ -207,11 +207,13 @@ bibstyle=alphabetic, hyperref
 
 %\usepackage[bf]{caption2}
  %\renewcommand{\captionfont}{\small\itshape}
-%\renewcommand{\figurename}{Abb.}
+%\renewcommand{\figurename}{Fig.}
 
 %\usepackage[titles]{tocloft}
-\renewcaptionname{ngerman}{\figurename}{Abb.}
-\renewcaptionname{ngerman}{\tablename}{Tab.}
+%\renewcaptionname{ngerman}{\figurename}{Fig.}
+\renewcaptionname{english}{\figurename}{Fig.}
+
+%\renewcaptionname{ngerman}{\tablename}{Tab.}
 
 %\usepackage{chngcntr} % fortlaufende Nummerierung im Abbverzeichnis
 %\counterwithout{figure}{chapter}% fortlaufende Nummerierung im Abbverzeichnis
@@ -465,7 +467,7 @@ Smartlab-Videos-Overview \\
 \vspace{0.5cm}
 %am Institut für Philosophie
 %Mag. phil. Dipl.-Ing. Dr. techn. Bernhard Heiden, MBA \\
-Authors: Bernhard Heiden
+Author: Bernhard Heiden
 \Large
 
 
@@ -517,6 +519,41 @@ Weiz, Villach, \today\ um \now
 %\KOMAoptions{fontsize=14pt}
 
 %\newpage
+\chapter*{Introduction}
+
+This document shows different activities done in the smartlab or the near ecosystem. 
+
+A short overview is given intrinsically in the image-Video \glqq Eigene Ideen im Smartlab verwirklichen\grqq \- (s.a. Fig. \ref{Fig0} ) 
+
+
+\href{https://www.youtube.com/embed/h5bxMwJhbHY}{"Eigene Ideen im Smartlab verwirklichen" \\ URL: https://www.youtube.com/embed/h5bxMwJhbHY}
+
+Description: Image Video of the Smartlab
+
+\begin{figure}
+\includegraphics[scale=0.4]{img/Smartlab_Machine-Types.JPG} 
+\caption{Smartlab - overview of machine - types}\label{Fig0}
+\end{figure}
+
+The document is divided in the following sections:
+\begin{itemize}
+\item Teaching Videos
+\item Public Live Casts (in future - soob coming)
+\item Project Videos (in future - soon coming)
+\item Privatissimunm
+\end{itemize}
+
+\paragraph{Teaching Videos} describe the different machines in the smartlab.
+
+\paragraph{Project Videos} contain videos regarding the individual projects done mostly be students in the smartlab
+
+\paragraph{Public Live Casts} contain videos that shall show in a live cast manner, activities or typical possible things that can be done in the smartlab by nearly everyone.
+
+\paragraph{Privatissimun} contains the live workflow of the project work, which casually documents the student's project work in the smartlab and around.
+
+
+
+
 \chapter{Teaching-Videos}
 \section{Lasercutting}
 
@@ -529,20 +566,25 @@ Description: It is shown how to cut a simple geometry, a star and how to engrave
 
 \end{enumerate}
 
-\chapter{Project-Videos}
+%\chapter{Public Live Casts}
+
+%\chapter{Project-Videos}
 \chapter{Privatissimum SS18}
 
 \section{2018\_04\_20 Privatissimum Smartlab}
 \href{https://youtu.be/GYzbqOBqjh4}{"2018\_04\_20 Privatissimum Smartlab" URL:https://youtu.be/GYzbqOBqjh4}
 
-Description: Experiment for the Triangulation with the FabsScan 100 - first live Cast in the smartlab.
+Description: Experiment for the Triangulation with the FabsScan 100 - first live Cast in the smartlab (s.a. Fig. \ref{Fig1}).
 \begin{itemize}
 \item  Experiment for the Triangulation with the FabsScan 100  from Mr. F. Yuchen
 \item Sensor news with the robot car from Mr. Y. Shi
 
 \end{itemize} 
-
-\includegraphics[scale=0.5]{img/Privatissimum1a.JPG} 
+\begin{figure}
+\includegraphics[scale=0.5]{img/Privatissimum1a.JPG}
+\caption{Smartlab - Privatissimum - Triangulation Tests - 23.4.2018 live cast}\label{Fig1}
+\end{figure}
+ 
 
 \section{2018\_04\_23 Privatissimum BII\_06}
 \href{https://vc.fh-kaernten.at/pu5rme745q3n/}{2018\_04\_23 Privatissimum BII\_06 "Url: https://vc.fh-kaernten.at/pu5rme745q3n} 
@@ -568,7 +610,7 @@ Description: Discussion of Ukulele Project, Triangulation Experiments, RobotCar
 
 %\listoftables
 %\addcontentsline{toc}{chapter}{\listtablename}
-%\listoffigures
+\listoffigures
 
 
 %\printbibliography[heading=bibintoc]
