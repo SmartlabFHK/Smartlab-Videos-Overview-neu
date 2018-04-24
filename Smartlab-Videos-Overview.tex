@@ -293,12 +293,24 @@ bibstyle=alphabetic, hyperref
                       % "Export animations to TeX" was enabled when this file was generated.
 
 \definecolor{labelcolor}{RGB}{100,0,0}
-
-
+%\documentstyle{article}
+\newcount\hour%
+\newcount\minute%
+\def\now{%
+        \hour=\time%
+        \minute=\hour%
+        \divide\hour by 60{}%
+        \the\hour:%
+        \multiply\hour by 60%        
+        \advance\minute by -\hour{}%        \time modulo 60
+        \ifnum\minute<10 0\the\minute%
+                        \else\the\minute%
+                  \fi}
 
 
 
 \begin{document}
+%Diese Dokument wurde erstellt am \today\ um \now.
 %\setcounter{table}{10}
 %\setcounter{table}{-1}
 
@@ -461,8 +473,7 @@ Authors: Bernhard Heiden
 
 \vspace{0.5cm}
 
-Weiz, \today
-
+Weiz, Villach, \today\ um \now
 \end{center}
 %\end{singlespacing}
 %Einsetzen der TXC Vorlage 'Deckblatt' mäglich
@@ -506,7 +517,7 @@ Weiz, \today
 %\KOMAoptions{fontsize=14pt}
 
 %\newpage
-\chapter{Lehrvideos}
+\chapter{Teaching-Videos}
 \section{Lasercutting}
 
 
@@ -518,8 +529,8 @@ Description: It is shown how to cut a simple geometry, a star and how to engrave
 
 \end{enumerate}
 
-
-\chapter{Privatissimum}
+\chapter{Project-Videos}
+\chapter{Privatissimum SS18}
 
 \section{2018\_04\_20 Privatissimum Smartlab}
 \href{https://youtu.be/GYzbqOBqjh4}{"2018\_04\_20 Privatissimum Smartlab" URL:https://youtu.be/GYzbqOBqjh4}
@@ -527,6 +538,18 @@ Description: It is shown how to cut a simple geometry, a star and how to engrave
 Description: Experiment for the Triangulation with the FabsScan 100 - first live Cast in the smartlab.
 
 \includegraphics[scale=0.5]{img/Privatissimum1a.JPG} 
+
+\section{2018\_04\_23 Privatissimum BII\_06}
+\href{https://vc.fh-kaernten.at/pu5rme745q3n/}{2018\_04\_23 Privatissimum BII\_06 "Url: https://vc.fh-kaernten.at/pu5rme745q3n} 
+
+and
+
+\href{https://youtu.be/-QwOoLBjIZU}{2018\_04\_23 Privatissimum BII\_06 "Url:https://youtu.be/-QwOoLBjIZU"} 
+
+Description: Discussion of Ukulele Project, Triangulation Experiments, RobotCar
+
+
+
 
 %\chapter*{Einleitung und Motivation}
 
