@@ -6,8 +6,7 @@ All Videos to the smartlab (NEU)
 
 Privatissimum
 =====================
-* 2018_04_20 Privatissimum Smartlab
+* [2018_04_20 Privatissimum Smartlab]
 (https://youtu.be/GYzbqOBqjh4)
 
 Description: Experiment for the Triangulation with the FabsScan 100 - first live cast in the smartlab.
-
