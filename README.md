@@ -15,4 +15,6 @@ Description: Experiment for the Triangulation with the FabsScan 100 - first live
 
 Description: Privatissimum 23.4.2018
 
+* [2018_04_30 Privatissimum Smartlab - FHK](https://vc.fh-kaernten.at/ps5vgrnv711b)
 
+Description: Privatissimum 30.4.2018
